@@ -1,6 +1,6 @@
 backend:
- name: git-gateway
- branch: main
+  name: git-gateway
+  branch: main
 
 media_folder: static/images
 public_folder: ../../static/images/
@@ -14,7 +14,6 @@ collections:
    slug: "{{slug}}"
    fields: 
     - {label: "Name", name: 'name', widget: "string"}
-    - {label: "Brithday Dates", name: 'brithday-dates', wdiget: "string"}
-    - {label: "Featured Image", name: 'featured-image', wdiget: "image"}
-    - {label: "Body", name: 'body', wdiget: "markdown"}
-    
+    - {label: "Brithday Dates", name: 'brithday-dates', widget: "string"}
+    - {label: "Featured Image", name: 'featured-image', widget: "image"}
+    - {label: "Body", name: 'body', widget: "markdown"}
