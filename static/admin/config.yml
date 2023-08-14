@@ -14,7 +14,7 @@ collections:
    slug: "{{slug}}"
    fields: 
     - {label: "Name", name: 'name', widget: "string"}
-    - {label: "Brithday Dates", name: 'brithday-dates', widget: "string"}
+    - {label: "Brithday Dates", name: 'brithday', widget: "string"}
     - {label: "Featured Image", name: 'featured-image', widget: "image"}
     - {label: "Body", name: 'body', widget: "markdown"}
     
