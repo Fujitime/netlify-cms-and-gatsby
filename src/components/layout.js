@@ -7,9 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import "../components/css/custom.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./header"
+import "tailwindcss/tailwind.css";
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -22,28 +22,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="font-sans bg-slate-900 text-white"> 
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
+      <main>{children}</main>
+      <footer
+        className="mt-5 text-sm" 
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com" >Gatsby</a>
-        </footer>
-      </div>
-    </>
+        © {new Date().getFullYear()} &middot; Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com" >Gatsby</a>
+      </footer>
+    </div>
   )
 }
 
