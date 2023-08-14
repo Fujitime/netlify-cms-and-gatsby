@@ -7,10 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import "../components/css/custom.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./header"
-import "./layout.css"
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -41,7 +40,7 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()} &middot; Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com" >Gatsby</a>
         </footer>
       </div>
     </>
