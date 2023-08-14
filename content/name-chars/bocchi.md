@@ -1,5 +1,5 @@
 ---
-Name: Hitori Gotoh
+name: Hitori Gotoh
 brithday: February 21
 featured-image: ../../static/images/bocchi.jpg
 ---

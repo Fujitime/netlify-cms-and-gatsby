@@ -1,5 +1,5 @@
 ---
-Name: Shibuya Kanon
+name: Shibuya Kanon
 brithday: May 1
 featured-image: ../../static/images/kanon.jpg
 ---

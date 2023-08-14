@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
                 className="w-full h-48 object-cover"
               />
               <div className="absolute bottom-0 left-0 p-2 bg-slate-900 bg-opacity-75 w-full">
-                <h2 className="text-lg font-semibold mb-2">{node.frontmatter.Name}</h2>
+                <h2 className="text-lg font-semibold mb-2">{node.frontmatter.name}</h2>
                 <p className="text-sm">
                   <span className="font-semibold">Birthday:</span>{" "}
                   {node.frontmatter.brithday}
@@ -49,7 +49,7 @@ export const query = graphql`
           excerpt
           frontmatter {
             brithday
-            Name
+            name
             featured_image {
               childImageSharp {
                 gatsbyImageData(width: 300, height: 200, layout: FIXED)

@@ -1,5 +1,5 @@
 ---
-Name: Hirasawa Yui
+name: Hirasawa Yui
 brithday: November 27
 featured-image: ../../static/images/yui.jpg
 ---
