@@ -3,17 +3,18 @@ backend:
   branch: main
 
 media_folder: static/images
-public_folder: ../../static/images/
+public_folder: /admin/static/images/
 
 collections:
- - name: "name-chars"
-   preview: false
-   label: "Name Chars"
-   folder: "content/name-chars"
-   create: true
-   slug: "{{slug}}"
-   fields: 
-    - {label: "Name", name: 'name', widget: "string"}
-    - {label: "Brithday Dates", name: 'brithday-dates', widget: "string"}
-    - {label: "Featured Image", name: 'featured-image', widget: "image"}
-    - {label: "Body", name: 'body', widget: "markdown"}
+  - name: "name-chars"
+    preview: false
+    label: "Name Chars"
+    folder: "content/name-chars"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - { label: "Name", name: 'name', widget: "string" }
+      - { label: "Brithday Dates", name: 'brithday-dates', widget: "string" }
+      - { label: "Featured Image", name: 'featured-image', widget: "image" }
+      - { label: "Body", name: 'body', widget: "markdown" }
+
