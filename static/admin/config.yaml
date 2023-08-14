@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: static/images
-public_folder: /admin/static/images/
+public_folder: ../../static/images
 
 collections:
   - name: "name-chars"
